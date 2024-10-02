@@ -34,7 +34,7 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "typescript": "^5.1.6",
-    "wrangler": "^3.79.0"
+    "wrangler": "https://prerelease-registry.devprod.cloudflare.dev/workers-sdk/prs/6881/npm-package-wrangler-6881"
   },
   "engines": {
     "node": ">=18.0.0"

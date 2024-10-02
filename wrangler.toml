@@ -7,6 +7,7 @@ compatibility_date = "2023-04-20"
 
 [build]
 command = "npm run build"
+watch_dir = "./app"
 
 [assets]
 directory = "./public"
