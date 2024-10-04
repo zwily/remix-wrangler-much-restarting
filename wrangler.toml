@@ -2,12 +2,7 @@ name = "remix-cloudflare-workers"
 
 workers_dev = true
 main = "./build/index.js"
-# https://developers.cloudflare.com/workers/platform/compatibility-dates
 compatibility_date = "2023-04-20"
-
-[build]
-command = "npm run build"
-watch_dir = "./app"
 
 [assets]
 directory = "./public"

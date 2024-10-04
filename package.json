@@ -5,10 +5,10 @@
   "type": "module",
   "scripts": {
     "build": "remix build",
-    "deploy": "wrangler deploy",
+    "deploy": "npm run build && wrangler deploy",
     "dev": "remix dev --manual -c \"npm start\"",
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
-    "start": "wrangler dev --x-dev-env ./build/index.js",
+    "start": "wrangler dev ./build/index.js",
     "typecheck": "tsc"
   },
   "dependencies": {
@@ -34,7 +34,7 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "typescript": "^5.1.6",
-    "wrangler": "https://prerelease-registry.devprod.cloudflare.dev/workers-sdk/prs/6881/npm-package-wrangler-6881"
+    "wrangler": "3.80.0"
   },
   "engines": {
     "node": ">=18.0.0"
